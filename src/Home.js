@@ -75,6 +75,14 @@ const BigLionTrade = () => {
                                         </>
                                     )}
                                 </div>
+                                <div className="mt-2 px-5">
+                                    <Link 
+                                        className="relative overflow-hidden bg-white p-2 py-2.5 shadow-md shadow-purple-500/80 rounded-[20px] flex justify-center border-[2px] border-purple-400 hover:bg-purple-500 w-full"
+                                        to="/about"
+                                    >
+                                        <span className="relative z-[2] font-bold text-purple-500 hover:text-white">About Us</span>
+                                    </Link>
+                                </div>
                             </div>
                         </div>
                     </div>

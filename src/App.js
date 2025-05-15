@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from './context/AuthContext';
@@ -5,6 +6,7 @@ import Home from './Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
+import About from './pages/About';
 
 const ProtectedRoute = ({ element }) => {
     const { user } = useAuth();
@@ -20,6 +22,7 @@ function App() {
                     <Route path="/login" element={<Login />} />
                     <Route path="/register" element={<Register />} />
                     <Route path="/dashboard" element={<ProtectedRoute element={<Dashboard />} />} />
+                    <Route path="/about" element={<About />} />
                 </Routes>
             </Router>
         </AuthProvider>
